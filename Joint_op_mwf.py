@@ -35,7 +35,7 @@ for pp in range(nparam):
         W[nn,nn,pp] = 1 / parameters[pp,nn]**2
 
 input_fa = torch.ones((tf*num_acqs)) * 4 / 180 * math.pi  # used to optimize FAs
-input_gap = torch.Tensor([80, 20, 58.93, 165.28, 165.28])
+input_gap = torch.Tensor([80e-3, 20e-3, 58.93e-3, 165.28e-3, 165.28e-3])
 input_prep = torch.tensor([29.7e-3, 89.7e-3])  # used to optimize prep
 input_signal = torch.cat((input_fa, input_gap, input_prep))
 input_signal = input_signal.unsqueeze(0).to(device)
