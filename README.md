@@ -14,8 +14,7 @@ With this repo, you can:
 ### 1. `OmniSeq/`
 This folder contains the code for generating the **Omni-QALAS sequence**.  
 - All sequences in this study were implemented with **Pulseq**.  
-- Run **`OmniSeq.mat`** to generate the corresponding `.seq` file.  
-- Includes implementations of **QALAS**, **MWF-QALAS**, and **Omni-QALAS** sequences.  
+- Run **`OmniSeq.m`** to generate the corresponding `.seq` file.    
 
 ---
 
@@ -32,7 +31,10 @@ This folder contains the optimization pipeline for sequence design.
 
 ### 3. `SubspaceRecon/`
 This folder contains the reconstruction framework from k-space to quantitative maps.  
-- **`subspace_recon.mat`** performs reconstruction from k-space to multiple contrasts.  
-- Results are stored in **`fit.mat`**, which can be further processed to obtain **T1**, **T2**, **MWF**, and other quantitative maps.  
+- **`subspace_recon.m`** performs reconstruction from k-space to multiple contrasts.  
+- Results are stored in **`fit.m`**, which can be further processed to obtain **T1**, **T2**, **MWF**, and other quantitative maps.  
 
 ---
+
+
+For access to the data, please contact me via email: shizhuo0908@zju.edu.cn
